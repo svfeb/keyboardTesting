@@ -2,341 +2,397 @@ import React from "react";
 
 function Keyboard() {
   return (
-    <div className="keyboard">
-      <p>Press the keys on your keyboard to run the test</p>
-
-      <div className="keyboardRow keyboardRowH1">
-        <div data-key="27" className="keyWord">
-          <span>esc</span>
-        </div>
-        <div data-key="112" className="key-F">
-          <span>F1</span>
-        </div>
-        <div data-key="113" className="key-F">
-          <span>F2</span>
-        </div>
-        <div data-key="114" className="key-F">
-          <span>F3</span>
-        </div>
-        <div data-key="115" className="key-F">
-          <span>F4</span>
-        </div>
-        <div data-key="116" className="key-F">
-          <span>F5</span>
-        </div>
-        <div data-key="117" className="key-F">
-          <span>F6</span>
-        </div>
-        <div data-key="118" className="key-F">
-          <span>F7</span>
-        </div>
-        <div data-key="119" className="key-F">
-          <span>F8</span>
-        </div>
-        <div data-key="120" className="key-F">
-          <span>F9</span>
-        </div>
-        <div data-key="121" className="key-F">
-          <span>F10</span>
-        </div>
-        <div data-key="122" className="key-F">
-          <span>F11</span>
-        </div>
-        <div data-key="123" className="key-F">
-          <span>F12</span>
-        </div>
-        <div data-key="44" className="keyLetter">
-          <span>PrtSc</span>
-        </div>
-        <div data-key="145" className="keyLetter">
-          <span>Scroll</span>
-        </div>
-        <div data-key="19" className="keyLetter">
-          <span>Pause</span>
-        </div>
-      </div>
-      <div className="keyboardRow">
-        <div className="keyLetter" data-key="192">
-          <div>`</div>
-        </div>
-        <div className="keyLetter" data-key="49">
-          <div>1</div>
-        </div>
-        <div className="keyLetter" data-key="50">
-          <div>2</div>
-        </div>
-        <div className="keyLetter" data-key="51">
-          <div>3</div>
-        </div>
-        <div className="keyLetter" data-key="52">
-          <div>4</div>
-        </div>
-        <div className="keyLetter" data-key="53">
-          <div>5</div>
-        </div>
-        <div className="keyLetter" data-key="54">
-          <div>6</div>
-        </div>
-        <div className="keyLetter" data-key="55">
-          <div>7</div>
-        </div>
-        <div className="keyLetter" data-key="56">
-          <div>8</div>
-        </div>
-        <div className="keyLetter" data-key="57">
-          <div>9</div>
-        </div>
-        <div className="keyLetter" data-key="48">
-          <div>0</div>
-        </div>
-        <div className="keyLetter" data-key="189">
-          <div>-</div>
-        </div>
-        <div className="keyLetter" data-key="187">
-          <div>=</div>
-        </div>
-        <div className="keyBottomRight keyWord keyW4" data-key="8">
-          <span>Backspace</span>
-        </div>
-
-        <div className="keyLetter" data-key="192">
-          <div>NUM</div>
-        </div>
-        <div data-key="45" className="keyLetter">
-          <span>Ins</span>
-        </div>
-        <div data-key="36" className="keyLetter">
-          <span>Home</span>
-        </div>
-        <div data-key="33" className="keyLetter">
-          <span>PgUp</span>
-        </div>
-        <div className="keyLetter" data-key="144">
-          <div>/</div>
-        </div>
-        <div className="keyLetter" data-key="106">
-          <div>*</div>
-        </div>
-        <div className="keyLetter" data-key="109">
-          <div>-</div>
-        </div>
-      </div>
-      <div className="keyboardRow">
-        <div className="keyBottomLeft keyWord keyW4" data-key="9">
-          <span>Tab</span>
-        </div>
-        <div className="keyLetter" data-char="Q">
-          Q
-        </div>
-        <div className="keyLetter" data-char="W">
-          W
-        </div>
-        <div className="keyLetter" data-char="E">
-          E
-        </div>
-        <div className="keyLetter" data-char="R">
-          R
-        </div>
-        <div className="keyLetter" data-char="T">
-          T
-        </div>
-        <div className="keyLetter" data-char="Y">
-          Y
-        </div>
-        <div className="keyLetter" data-char="U">
-          U
-        </div>
-        <div className="keyLetter" data-char="I">
-          I
-        </div>
-        <div className="keyLetter" data-char="O">
-          O
-        </div>
-        <div className="keyLetter" data-char="P">
-          P
-        </div>
-        <div className="keyLetter" data-key="219" data-char="{[">
-          <div>[</div>
-        </div>
-        <div className="keyLetter" data-key="221" data-char="}]">
-          <div>]</div>
-        </div>
-        <div className="keyLetter" data-key="220" data-char="|\">
-          <div>\</div>
-        </div>
-        <div data-key="46" className="keyLetter">
-          <span>Del</span>
-        </div>
-        <div data-key="35" className="keyLetter">
-          <span>End</span>
-        </div>
-        <div data-key="34" className="keyLetter">
-          <span>PgDn</span>
-        </div>
-        <div className="keyLetter" data-key="55">
-          <div>7</div>
-        </div>
-        <div className="keyLetter" data-key="56">
-          <div>8</div>
-        </div>
-        <div className="keyLetter" data-key="57">
-          <div>9</div>
-        </div>
-        <div className="keyLetter" data-key="107">
-          <div>+</div>
-        </div>
-      </div>
-      <div className="keyboardRow">
-        <div className="keyBottomLeft keyWord keyW5" data-key="20">
-          <span>CapsLock</span>
-        </div>
-        <div className="keyLetter" data-char="A">
-          A
-        </div>
-        <div className="keyLetter" data-char="S">
-          S
-        </div>
-        <div className="keyLetter" data-char="D">
-          D
-        </div>
-        <div className="keyLetter" data-char="F">
-          F
-        </div>
-        <div className="keyLetter" data-char="G">
-          G
-        </div>
-        <div className="keyLetter" data-char="H">
-          H
-        </div>
-        <div className="keyLetter" data-char="J">
-          J
-        </div>
-        <div className="keyLetter" data-char="K">
-          K
-        </div>
-        <div className="keyLetter" data-char="L">
-          L
-        </div>
-        <div className="keyLetter" data-key="186">
-          <div>;</div>
-        </div>
-        <div className="keyLetter" data-key="221">
-          <div>'</div>
-        </div>
-        <div className="keyBottomRight keyWord keyW5" data-key="13">
-          <span>Enter</span>
-        </div>
-
-        <div className="keyLetter" data-key="52">
-          <div>4</div>
-        </div>
-        <div className="keyLetter" data-key="53">
-          <div>5</div>
-        </div>
-        <div className="keyLetter" data-key="54">
-          <div>6</div>
-        </div>
-
-        <div className="keyLetter" data-key="51">
-          <div>%</div>
-        </div>
-      </div>
-      <div className="keyboardRow">
-        <div className="keyBottomLeft keyWord keyW6" data-key="16">
-          <span>shift</span>
-        </div>
-
-        <div className="keyLetter" data-char="Z">
-          Z
-        </div>
-        <div className="keyLetter" data-char="X">
-          X
-        </div>
-        <div className="keyLetter" data-char="C">
-          C
-        </div>
-        <div className="keyLetter" data-char="V">
-          V
-        </div>
-        <div className="keyLetter" data-char="B">
-          B
-        </div>
-        <div className="keyLetter" data-char="N">
-          N
-        </div>
-        <div className="keyLetter" data-char="M">
-          M
-        </div>
-        <div className="keyLetter" data-key="188">
-          <div>,</div>
-        </div>
-        <div className="keyLetter" data-key="190">
-          <div>.</div>
-        </div>
-        <div className="keyLetter" data-key="191">
-          <div>/</div>
-        </div>
-        <div className="keyBottomRight keyWord keyW6" data-key="16">
-          <span>shift</span>
-        </div>
-        <div className="keyArrowTall" data-key="38">
-          <div>&#9650;</div>
-        </div>
-        <div className="keyLetter" data-key="49">
-          <div>1</div>
-        </div>
-        <div className="keyLetter" data-key="50">
-          <div>2</div>
-        </div>
-        <div className="keyLetter" data-key="51">
-          <div>3</div>
-        </div>
-      </div>
-      <div className="keyboardRow keyboardRowH3">
-        <div className="keyBottomLeft keyWord keyW1" data-key="17">
-          <span>Ctrl</span>
-        </div>
-        <div className="keyBottomLeft keyWord keyW1" data-key="91">
-          <span>Window</span>
-        </div>
-        <div className="keyBottomLeft keyWord keyW1" data-key="18">
-          <span>Alt</span>
-        </div>
-        <div className="keyBottomRight keyWord keyW3" data-key="17">
-          <span>Ctrl</span>
-        </div>
-        <div className="keyBottomRight keyWord keyW3" data-key="91">
-          <span>Window</span>
-        </div>
-        <div className="keyBottomRight keyWord keyW3" data-key="18">
-          <span>Alt</span>
-        </div>
-
-        <div
-          className="keyLetter keyRight keySpace"
-          data-key="32"
-          data-char=" "
+    <div className="keyboard-container">
+      <div className="keyboard">
+        <p
+          style={{
+            textAlign: "center",
+            color: "#075594",
+            fontSize: "25px",
+            fontWeight: "bold",
+          }}
         >
-          &nbsp;
-        </div>
-        <div data-key="37" className="keyArrow">
-          <span>&#9664;</span>
-        </div>
-        <div className="keyArrowTall" data-key="40">
-          <div>&#9660;</div>
-        </div>
-        <div data-key="39" className="keyArrow">
-          <span>&#9654;</span>
-        </div>
-        <div className="keyLetter" data-key="48">
-          <div>0</div>
-        </div>
-        <div className="keyLetter" data-key="110">
-          <div>.</div>
+          Press the keys on your keyboard to run the test
+        </p>
+
+        {/* ////////////////////////////////////////////////// */}
+
+        <div className="row">
+          <div className="group">
+            <div data-key="27" className="key">
+              Esc
+            </div>
+            <div className="mini-group">
+              <div data-key="112" className="key">
+                F1
+              </div>
+              <div data-key="113" className="key">
+                F2
+              </div>
+              <div data-key="114" className="key">
+                F3
+              </div>
+              <div data-key="115" className="key">
+                F4
+              </div>
+              <div data-key="116" className="key">
+                F5
+              </div>
+              <div data-key="117" className="key">
+                F6
+              </div>
+              <div data-key="118" className="key">
+                F7
+              </div>
+              <div data-key="119" className="key">
+                F8
+              </div>
+              <div data-key="120" className="key">
+                F9
+              </div>
+              <div data-key="121" className="key">
+                F10
+              </div>
+              <div data-key="122" className="key">
+                F11
+              </div>
+              <div data-key="123" className="key">
+                F12
+              </div>
+            </div>
+          </div>
+          <div className="group lock1">
+            <div className="lock1">
+              <div data-key="-1" className="key">
+                PrtSc
+              </div>
+              <div data-key="145" className="key">
+                Scroll
+              </div>
+              <div data-key="19" className="key">
+                Pause
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="keyLetter" data-key="13">
-          <div>Enter</div>
+        {/* ////////////////////////////////////////////////// */}
+        <div className="row">
+          <div className="group">
+            <div data-key="192" className="key large">
+              <i>`</i>
+            </div>
+            <div data-key="49" className="key">
+              <span>1</span>
+            </div>
+            <div data-key="50" className="key">
+              <span>2</span>
+            </div>
+            <div data-key="51" className="key">
+              <span>3</span>
+            </div>
+            <div data-key="52" className="key">
+              <span>4</span>
+            </div>
+            <div data-key="53" className="key">
+              <span>5</span>
+            </div>
+            <div data-key="54" className="key">
+              <span>6</span>
+            </div>
+            <div data-key="55" className="key">
+              <span>7</span>
+            </div>
+            <div data-key="56" className="key">
+              <span>8</span>
+            </div>
+            <div data-key="57" className="key">
+              <span>9</span>
+            </div>
+            <div data-key="48" className="key">
+              <span>0</span>
+            </div>
+            <div data-key="189" className="key">
+              <i className="underscore">_</i>
+            </div>
+            <div data-key="187" className="key">
+              <span>=</span>
+            </div>
+            <div data-key="8" className="key backspace">
+              <i className="fas fa-arrow-left-long"></i>
+            </div>
+          </div>
+          <div className="group">
+            <div data-key="45" className="key">
+              Ins
+            </div>
+            <div data-key="36" className="key">
+              Home
+            </div>
+            <div data-key="33" className="key">
+              PgUp
+            </div>
+          </div>
+          <div className="group">
+            <div data-key="144" className="key">
+              Num
+            </div>
+            <div data-key="111" className="key">
+              /
+            </div>
+            <div data-key="106" className="key">
+              *
+            </div>
+            <div data-key="109" className="key">
+              -
+            </div>
+          </div>
+        </div>
+
+        {/* ////////////////////////////////////////////////// */}
+
+        <div className="row">
+          <div className="group">
+            <div data-key="9" className="key tab">
+              ⭾Tab
+            </div>
+            <div data-key="81" className="key">
+              Q
+            </div>
+            <div data-key="87" className="key">
+              W
+            </div>
+            <div data-key="69" className="key">
+              E
+            </div>
+            <div data-key="82" className="key">
+              R
+            </div>
+            <div data-key="84" className="key">
+              T
+            </div>
+            <div data-key="89" className="key">
+              Y
+            </div>
+            <div data-key="85" className="key">
+              U
+            </div>
+            <div data-key="73" className="key">
+              I
+            </div>
+            <div data-key="79" className="key">
+              O
+            </div>
+            <div data-key="80" className="key">
+              P
+            </div>
+            <div data-key="219" className="key">
+              <span> &#91;</span>
+            </div>
+            <div data-key="221" className="key">
+              <span> &#93;</span>
+            </div>
+            <div data-key="220" className="key">
+              <span>\</span>
+            </div>
+          </div>
+          <div className="group">
+            <div data-key="46" className="key">
+              Del
+            </div>
+            <div data-key="35" className="key">
+              End
+            </div>
+            <div data-key="34" className="key">
+              PgDn
+            </div>
+          </div>
+          <div className="group">
+            <div data-key="103" className="key">
+              <span>7</span>
+            </div>
+            <div data-key="104" className="key num-special">
+              <span>9</span>
+            </div>
+            <div data-key="105" className="key">
+              <span>9</span>
+            </div>
+            <div data-key="107" className="key num-large">
+              +
+            </div>
+          </div>
+        </div>
+
+        {/* ////////////////////////////////////////////////// */}
+
+        <div className="row">
+          <div className="group">
+            <div data-key="20" className="key tab">
+              CapsLock
+            </div>
+            <div data-key="65" className="key">
+              A
+            </div>
+            <div data-key="83" className="key">
+              S
+            </div>
+            <div data-key="68" className="key">
+              D
+            </div>
+            <div data-key="70" className="key">
+              F
+            </div>
+            <div data-key="71" className="key">
+              G
+            </div>
+            <div data-key="72" className="key">
+              H
+            </div>
+            <div data-key="74" className="key">
+              J
+            </div>
+            <div data-key="75" className="key">
+              K
+            </div>
+            <div data-key="76" className="key">
+              L
+            </div>
+            <div data-key="186" className="key">
+              <span>;</span>
+            </div>
+            <div data-key="222" className="key">
+              <span>'</span>
+            </div>
+            <div data-key="13" className="key enter">
+              Enter
+            </div>
+          </div>
+          <div className="empty-group"></div>
+          <div className="group">
+            <div data-key="100" className="key">
+              <span>4</span>
+            </div>
+            <div data-key="101" className="key num-special">
+              <span>5</span>
+            </div>
+            <div data-key="102" className="key">
+              <span>6</span>
+            </div>
+            <p className="key key-empty"></p>
+          </div>
+        </div>
+
+        {/* ////////////////////////////////////////////////// */}
+
+        <div className="row">
+          <div className="group">
+            <div data-key="16" className="key shift l-s">
+              <span>Shift</span>
+            </div>
+            <div data-key="90" className="key">
+              Z
+            </div>
+            <div data-key="88" className="key">
+              X
+            </div>
+            <div data-key="67" className="key">
+              C
+            </div>
+            <div data-key="86" className="key">
+              V
+            </div>
+            <div data-key="66" className="key">
+              B
+            </div>
+            <div data-key="78" className="key">
+              N
+            </div>
+            <div data-key="77" className="key">
+              M
+            </div>
+            <div data-key="188" className="key">
+              <span>,</span>
+            </div>
+            <div data-key="190" className="key">
+              <span>.</span>
+            </div>
+            <div data-key="191" className="key">
+              <span>/</span>
+            </div>
+            <div data-key="16" className="key shift r-s">
+              <span>Shift</span>
+            </div>
+          </div>
+          <div className="group">
+            <p className="key key-empty"></p>
+            <div data-key="38" className="key">
+              <i className="fas fa-arrow-up"></i>
+            </div>
+            <p className="key key-empty"></p>
+          </div>
+          <div className="group">
+            <div data-key="97" className="key">
+              <span>1</span>
+            </div>
+            <div data-key="98" className="key">
+              <span>2</span>
+            </div>
+            <div data-key="99" className="key">
+              <span>3</span>
+            </div>
+            <div data-key="13" className="key num-large">
+              Enter
+            </div>
+          </div>
+        </div>
+
+        {/* ////////////////////////////////////////////////// */}
+
+        <div className="row">
+          <div className="group">
+            <div data-key="17" className="key">
+              Ctrl
+            </div>
+
+            <div data-key="91" className="key">
+              <i className="fab fa-windows"></i>
+            </div>
+            <div data-key="18" className="key">
+              Alt
+            </div>
+            <div data-key="32" className="key spaceBar">
+              Space
+            </div>
+            <div data-key="18" className="key">
+              Alt
+            </div>
+            <div data-key="-2" className="key">
+              <i className="fab fa-windows"></i>
+            </div>
+            <div data-key="17" className="key">
+              Ctrl
+            </div>
+          </div>
+          <div className="group">
+            <div data-key="37" className="key">
+              <i className="fas fa-arrow-left"></i>
+            </div>
+            <div data-key="40" className="key">
+              <i className="fas fa-arrow-down"></i>
+            </div>
+            <div data-key="39" className="key">
+              <i className="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div className="group">
+            <div data-key="96" className="key num-ins">
+              <span>0</span>
+            </div>
+            <div data-key="110" className="key">
+              <span>.</span>
+            </div>
+            <p className="key key-empty"></p>
+          </div>
         </div>
       </div>
     </div>
