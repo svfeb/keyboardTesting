@@ -5,7 +5,7 @@
        
 }
 
-.body {
+body {
     padding: 0;
     margin: 0;
     min-height: 100vh;
@@ -23,6 +23,8 @@
     box-sizing: border-box;
     outline: none;
 }
+
+
 
 .container {
     text-align: center;
@@ -145,7 +147,14 @@ i.underscore {
     height: 97px;
 }
 
+/* .form-group {
+    margin-left: "950px";    
+    border-radius: "20px";
+}
 
+.btn-primary::before {
+    
+} */
 .locks {
     display: flex;
     flex-direction: row;
@@ -198,6 +207,7 @@ i.underscore {
     justify-content: center;
     box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2),
         0 40px 77px 0 rgba(0, 0, 0, 0.22);
+        
 }
 
 .row {
