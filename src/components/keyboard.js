@@ -41,10 +41,8 @@ function Keyboard() {
     <div className="keyboard-container">
       <div className="wrapper">
         <div className="container">
-          <h1 style={{ fontWeight: "bold", color: "#075594" }}>
-            Keyboard Test
-          </h1>
-          <p style={{ color: "#36668d", fontSize: "25px", fontWeight: "bold" }}>
+          <h1 style={{ fontWeight: "bold", color: "white" }}>Keyboard Test</h1>
+          <p style={{ color: "white", fontSize: "25px", fontWeight: "bold" }}>
             Free online keyboard test to check if the keyboard keys are working
             well or not
           </p>
@@ -91,7 +89,7 @@ function Keyboard() {
         <p
           style={{
             textAlign: "center",
-            color: "#075594",
+            color: "white",
             fontSize: "25px",
             fontWeight: "bold",
           }}
@@ -289,8 +287,8 @@ function Keyboard() {
             <div data-key="103" className="key">
               <span>7</span>
             </div>
-            <div data-key="104" className="key num-special">
-              <span>9</span>
+            <div data-key="104" className="key ">
+              <span>8</span>
             </div>
             <div data-key="105" className="key">
               <span>9</span>
@@ -348,7 +346,7 @@ function Keyboard() {
             <div data-key="100" className="key">
               <span>4</span>
             </div>
-            <div data-key="101" className="key num-special">
+            <div data-key="101" className="key ">
               <span>5</span>
             </div>
             <div data-key="102" className="key">

@@ -2,12 +2,14 @@
     --keyboard-bg-color: #758ea3;
     --key-bg-color: #ffffff;
     --key-color: #000000;
+
        
 }
 
 body {
     padding: 0;
     margin: 0;
+
     min-height: 100vh;
     display: grid;
     grid-template-rows: 1fr auto;
@@ -29,19 +31,9 @@ body {
 .container {
     text-align: center;
     font-size: 1.8em;
-    padding: 0.7em;
+    padding-top: 6px;
 }
 
-.app-container {
-    background-color: #d5e1eb;
-    margin: 0 auto;
-    width: 90%;
-    height: 95%;
-    /* height: 80vh; */
-    border-radius: 10px;
-    margin-top: 80px;
-    /* min-height: 50vh; */
-}
 
 
 .key {
@@ -111,7 +103,7 @@ i.underscore {
 }
 
 .spaceBar {
-    width: 460px;
+    width: 405px;
     font-size: 18px;
 }
 
@@ -143,62 +135,24 @@ i.underscore {
 }
 
 .num-large {
-    margin-bottom: -55px;
+    margin-bottom: -58px;
     height: 97px;
 }
 
-/* .form-group {
-    margin-left: "950px";    
-    border-radius: "20px";
-}
-
-.btn-primary::before {
-    
-} */
-.locks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    margin-top: 5px;
-    margin-right: 10px;
-    background-color: var(--key-bg-color);
-    border-radius: 5px;
-}
-
-.lock {
-    margin: 5px 22px;
-    width: 135px;
-}
-
-.light-key {
-    padding: 3px 5px;
-    border-radius: 5px;
-}
-
-.off {
-    color: var(--key-color);
-    border: 1px solid var(--key-color);
-}
-
-.on {
-    color: var(--lock-on-color);
-    border: 1px solid var(--lock-on-color);
-}
-
-
 .keyboard-container {
-    height: 70%;
     width: 100%;
-    /* margin-bottom: -2000px; */
-    
+    overflow-x: auto;
 }
 
 .keyboard {
-    background-color: var(--keyboard-bg-color);
+    background: rgba(213, 225, 235, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     width: 1250px;
-    margin: 50px auto;
+    margin: 75px auto;
     padding: 20px 10px;
     border-radius: 15px;
     display: grid;
@@ -206,10 +160,8 @@ i.underscore {
     grid-template-rows: 1fr;
     justify-content: center;
     box-shadow: 0 27px 24px 0 rgba(46, 44, 44, 0.2),
-        0 40px 77px 0 rgba(0, 0, 0, 0.22);
-        
+    0 40px 77px 0 rgba(0, 0, 0, 0.22);
 }
-
 .row {
     display: grid;
     grid-template-columns: auto 0.2fr 0.2fr;
@@ -234,7 +186,7 @@ i.underscore {
 }
 
 .mini-group {
-    margin-left: 86px;
+    margin-left: 28px;
 }
 
 .right {
