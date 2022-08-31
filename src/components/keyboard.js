@@ -1,8 +1,92 @@
-import React from "react";
+import React, { useState } from "react";
+import "../App.css";
 
 function Keyboard() {
+  const [state, setState] = useState({
+    hideDeleteIcon: true,
+    text: "",
+    latestKey: "",
+  });
+
+  const handleChange = (e) => {
+    const keyCode = e.target.value
+      ? e.target.value.toUpperCase()?.charCodeAt(e.target.value.length - 1)
+      : null;
+    setState({
+      ...state,
+      text: e.target.value,
+      hideDeleteIcon: true,
+      latestKey: keyCode,
+    });
+
+    const allKeys = document.getElementsByClassName("key");
+    for (let i = 0; i < allKeys.length; i++) {
+      const pressedKey = allKeys[i];
+
+      if (+pressedKey.getAttribute("data-key") === +keyCode) {
+        pressedKey.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+
+        setTimeout(() => {
+          pressedKey.style.backgroundColor = "white";
+        }, 200);
+      }
+    }
+  };
+
+  const eraseText = () => {
+    setState({ ...state, text: "", hideDeleteIcon: false });
+  };
+
   return (
     <div className="keyboard-container">
+      <div className="wrapper">
+        <div className="container">
+          <h1 style={{ fontWeight: "bold", color: "#075594" }}>
+            Keyboard Test
+          </h1>
+          <p style={{ color: "#36668d", fontSize: "25px", fontWeight: "bold" }}>
+            Free online keyboard test to check if the keyboard keys are working
+            well or not
+          </p>
+          <textarea
+            style={{
+              borderRadius: "10px",
+              fontSize: "25px",
+              maxWidth: "95%",
+              border: "4px solid white",
+              resize: "none",
+              marginTop: "10px",
+              marginBottom: "-50px",
+            }}
+            className="form-control"
+            rows="5"
+            cols="70"
+            value={state.text}
+            onChange={handleChange}
+            placeholder="Press any key...."
+          ></textarea>
+          {state.hideDeleteIcon && (
+            <span
+              style={{
+                marginLeft: "950px",
+                borderRadius: "5px",
+              }}
+            >
+              {state.hideDeleteIcon && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  onClick={eraseText}
+                >
+                  <path d="M17.026 22.957c10.957-11.421-2.326-20.865-10.384-13.309l2.464 2.352h-9.106v-8.947l2.232 2.229c14.794-13.203 31.51 7.051 14.794 17.675z" />
+                </svg>
+              )}
+            </span>
+          )}
+        </div>
+      </div>
       <div className="keyboard">
         <p
           style={{
@@ -14,8 +98,6 @@ function Keyboard() {
         >
           Press the keys on your keyboard to run the test
         </p>
-
-        {/* ////////////////////////////////////////////////// */}
 
         <div className="row">
           <div className="group">
@@ -75,8 +157,6 @@ function Keyboard() {
             </div>
           </div>
         </div>
-
-        {/* ////////////////////////////////////////////////// */}
         <div className="row">
           <div className="group">
             <div data-key="192" className="key large">
@@ -148,8 +228,6 @@ function Keyboard() {
             </div>
           </div>
         </div>
-
-        {/* ////////////////////////////////////////////////// */}
 
         <div className="row">
           <div className="group">
@@ -223,8 +301,6 @@ function Keyboard() {
           </div>
         </div>
 
-        {/* ////////////////////////////////////////////////// */}
-
         <div className="row">
           <div className="group">
             <div data-key="20" className="key tab">
@@ -281,8 +357,6 @@ function Keyboard() {
             <p className="key key-empty"></p>
           </div>
         </div>
-
-        {/* ////////////////////////////////////////////////// */}
 
         <div className="row">
           <div className="group">
@@ -345,8 +419,6 @@ function Keyboard() {
             </div>
           </div>
         </div>
-
-        {/* ////////////////////////////////////////////////// */}
 
         <div className="row">
           <div className="group">

@@ -191,7 +191,7 @@ i.underscore {
 .keyboard-container {
     height: 70%;
     width: 100%;
-    margin-bottom: -2000px;
+    /* margin-bottom: -2000px; */
     
 }
 
@@ -205,7 +205,7 @@ i.underscore {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     justify-content: center;
-    box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2),
+    box-shadow: 0 27px 24px 0 rgba(46, 44, 44, 0.2),
         0 40px 77px 0 rgba(0, 0, 0, 0.22);
         
 }
