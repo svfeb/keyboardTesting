@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../App.css";
 
 function Keyboard() {
   const [state, setState] = useState({
@@ -24,10 +23,10 @@ function Keyboard() {
       const pressedKey = allKeys[i];
 
       if (+pressedKey.getAttribute("data-key") === +keyCode) {
-        pressedKey.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+        pressedKey.classList.add("key-press");
 
         setTimeout(() => {
-          pressedKey.style.backgroundColor = "white";
+          pressedKey.classList.remove("key-press");
         }, 200);
       }
     }
