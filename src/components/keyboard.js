@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { keyboardRows, keyData } from "./data/keyboardData";
 
 function Keyboard() {
   const [state, setState] = useState({
@@ -18,12 +19,13 @@ function Keyboard() {
       latestKey: keyCode,
     });
 
-    const allKeys = document.getElementsByClassName("key");
+    const allKeys = keyData.map((ele) => ele.key);
+
     for (let i = 0; i < allKeys.length; i++) {
       const pressedKey = allKeys[i];
-
-      if (+pressedKey.getAttribute("data-key") === +keyCode) {
-        pressedKey.classList.add("key-press");
+      console.log(pressedKey, e.target.value.toUpperCase());
+      if (+String(pressedKey).toUpperCase()?.charCodeAt(0) === +keyCode) {
+        // to continue... change color of pressed key
 
         setTimeout(() => {
           pressedKey.classList.remove("key-press");
@@ -95,8 +97,27 @@ function Keyboard() {
         >
           Press the keys on your keyboard to run the test
         </p>
-
         <div className="row">
+          <div className="group">
+            {Object.keys(keyboardRows).map((row, i) => {
+              let _row = row + i;
+              return (
+                <div className="row" key={_row}>
+                  {keyboardRows[row].map((x, i) => {
+                    let _x = x + i;
+                    return (
+                      <div className="key" key={_x}>
+                        {x}
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* <div className="row">
           <div className="group">
             <div data-key="27" className="key">
               Esc
@@ -462,7 +483,7 @@ function Keyboard() {
             </div>
             <p className="key key-empty"></p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
