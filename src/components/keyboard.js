@@ -26,9 +26,9 @@ function Keyboard() {
       console.log(pressedKey, e.target.value.toUpperCase());
       if (+String(pressedKey).toUpperCase()?.charCodeAt(0) === +keyCode) {
         // to continue... change color of pressed key
-
+const strColor = pressedKey.replace(/\d+/, match => <span style={{color: 'red'}}> {match} </span> );
         setTimeout(() => {
-          pressedKey.classList.remove("key-press");
+          pressedKey.replace(/\d+/, match => <span style={{color: 'red'}}> {match} </span> );
         }, 200);
       }
     }
