@@ -1,5 +1,20 @@
 const keyboardRows = {
   row_1: [
+    "ESC",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+  ],
+  row_2: [
     "`",
     "1",
     "2",
@@ -15,7 +30,7 @@ const keyboardRows = {
     "=",
     "Backspace",
   ],
-  row_2: [
+  row_3: [
     "tab",
     "q",
     "w",
@@ -31,7 +46,7 @@ const keyboardRows = {
     "]",
     "\\",
   ],
-  row_3: [
+  row_4: [
     "Caps",
     "a",
     "s",
@@ -46,28 +61,7 @@ const keyboardRows = {
     "'",
     "Enter",
   ],
-  row_4: [
-    "Shift",
-    "z",
-    "x",
-    "c",
-    "v",
-    "b",
-    "n",
-    "m",
-    ",",
-    ".",
-    "/",
-    "rightshift",
-  ],
-  row_5: [
-    "Ctrl",
-    "Windows",
-    "Alt",
-    "Space",
-    "rightalt",
-    "Windows",
-    "rightCtrl",
-  ],
+  row_5: ["Shift", "z", "x", "c", "v", "b", "n", "m", ",", ".", "/", "Shift"],
+  row_6: ["Ctrl", "Fn", "Windows", "Alt", "Space", "Alt", "Windows", "Ctrl"],
 };
 export default keyboardRows;
