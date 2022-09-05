@@ -108,48 +108,36 @@ function Keyboard() {
                   <div className="row" key={_row}>
                     {keyboardRows[row].map((keys, i) => {
                       let _id = keys + i;
-                      if (keys === "Windows")
-                        return (
-                          <div data-key={keys} key={_id} className="key">
-                            <i className="fab fa-windows"></i>
-                          </div>
-                        );
-                      else if (keys === "Backspace")
-                        return (
-                          <div
-                            data-key={keys}
-                            key={_id}
-                            className="key backspace"
-                          >
-                            <i className="fas fa-arrow-left-long"></i>
-                          </div>
-                        );
-                      else if (keys === "Shift")
-                        return (
-                          <div
-                            data-key={keys}
-                            key={_id}
-                            className="key shift r-s"
-                          >
-                            <span>Shift</span>
-                          </div>
-                        );
-                      else if (keys === "Space")
-                        return (
-                          <div
-                            data-key={keys}
-                            key={_id}
-                            className="key spaceBar"
-                          >
-                            Space
-                          </div>
-                        );
-                      else
-                        return (
-                          <div className="key" data-key={keys} key={_id}>
-                            {keys}
-                          </div>
-                        );
+
+                      return keys === "Windows" ? (
+                        <div data-key={keys} key={_id} className="key">
+                          <i className="fab fa-windows"></i>
+                        </div>
+                      ) : keys === "Backspace" ? (
+                        <div
+                          data-key={keys}
+                          key={_id}
+                          className="key backspace"
+                        >
+                          <i className="fas fa-arrow-left-long"></i>
+                        </div>
+                      ) : keys === "Shift" ? (
+                        <div
+                          data-key={keys}
+                          key={_id}
+                          className="key shift r-s"
+                        >
+                          <span>Shift</span>
+                        </div>
+                      ) : keys === "Space" ? (
+                        <div data-key={keys} key={_id} className="key spaceBar">
+                          Space
+                        </div>
+                      ) : (
+                        <div className="key" data-key={keys} key={_id}>
+                          {keys}
+                        </div>
+                      );
                     })}
                   </div>
                 );
